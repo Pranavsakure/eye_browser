@@ -1,0 +1,129 @@
+/* CSS Reset  */
+*{
+    margin:0px;
+
+}
+body{
+    display: grid;
+    flex-direction: column;
+    grid-template-rows: 1fr 12fr 1fr;
+    height: 100vh;
+}
+
+/* for navbar */
+#navbar{
+    display: flex;
+    position: relative;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar img{
+    width: 81px;
+    height: 53px;
+    padding: 10px;
+    padding-left: 15px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    margin:29px 47px;
+
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+/*  for middle section */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+div img {
+    width: 600px;
+    height: 250px;
+    border-radius: 30px;
+}
+/* for search bar */
+
+.searchbar{
+    display: flex;
+    margin: 10px;
+    border:2px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.searchbar:hover{
+    border-color: rgb(221, 220, 220);
+    box-shadow: 30%;
+    
+}
+.searchbar input[type="text"]
+{
+    width: 507px;
+    height: 50px;
+    border-radius:30px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    cursor: default;
+}
+button{
+    height: 50px;
+    width:50px;
+    margin-left: 3px;
+    border-radius: 20%;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    
+
+}
+
+/* to remove the blue box */
+input:focus, textarea {
+    outline: none !important;
+}
+
+
+.searchbar button img{
+    height: 30px;
+    width:30px;
+    box-sizing: border-box;
+}
+
+/* for languages */
+.language{
+    margin-top: 30px;
+    display: flex;
+}
+a{
+     text-decoration: none;
+     color: blue(75, 73, 73);
+     margin: 0px 30px;
+}
+
+/* for footer */
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 20px 10px;
+    height: 20px;
+
+}
+
