@@ -1,10 +1,11 @@
 /* CSS Reset  */
 *{
     margin:0px;
+    padding: 0px;
 
 }
 body{
-    display: grid;
+    display: flex;
     flex-direction: column;
     grid-template-rows: 1fr 12fr 1fr;
     height: 100vh;
@@ -13,7 +14,9 @@ body{
 /* for navbar */
 #navbar{
     display: flex;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    margin: auto;
 
 }
 #navbar::before{
@@ -27,10 +30,11 @@ body{
 }
 
 #navbar img{
-    width: 81px;
-    height: 53px;
-    padding: 10px;
+    width: 71px;
+    height: 43px;
+    padding:10px;
     padding-left: 15px;
+    padding-top: 18px;
 }
 #navbar ul{
     display: flex;
@@ -51,9 +55,19 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    margin: auto;
+    justify-content: center;
 }
-div img {
+.container::before{
+    content: "";
+    background:url(../img/bg.jpg);
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.container img {
     width: 600px;
     height: 250px;
     border-radius: 30px;
@@ -69,7 +83,8 @@ div img {
     padding: 5px;
 }
 .searchbar:hover{
-    border-color: rgb(221, 220, 220);
+    border-color: black(221, 220, 220);
+    background-color: white;
     box-shadow: 30%;
     
 }
@@ -79,9 +94,14 @@ div img {
     height: 50px;
     border-radius:30px;
     padding: 10px;
+    background-color: transparent;
     box-sizing: border-box;
     border: none;
     cursor: default;
+}
+::placeholder{
+    color: black;
+    font-weight: bold;
 }
 button{
     height: 50px;
@@ -90,7 +110,7 @@ button{
     border-radius: 20%;
     cursor: pointer;
     border: none;
-    background-color: white;
+    background-color: transparent;
     
 
 }
@@ -120,10 +140,16 @@ a{
 
 /* for footer */
 footer{
-    background-color: grey;
+    background-color: transparent;
     text-align: center;
     padding: 20px 10px;
     height: 20px;
 
 }
 
+@media screen and (max-width:400px) {
+    #navbar ul{
+        overflow: hidden;
+    }
+   
+}

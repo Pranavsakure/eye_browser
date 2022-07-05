@@ -1,0 +1,42 @@
+/* for navbar */
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+#navbar ul li{
+    margin: 2px 5px;
+    
+}
+#navbar ul li a{
+    margin: 2px 27px;
+    
+}
+/* for container*/
+.container{
+    margin: 150px 0px;
+}
+.container img{
+       height: 60%;
+       width: 80%;
+}
+.container input{
+    width: 200px;
+}
+
+/* for searchbar */
+.searchbar{
+    width: 80%;
+    margin: 10px 0px;
+    padding: 0px;
+}
+.language{
+    overflow: hidden;
+    display: none;
+}
+/* for footer */
+footer{
+    width: 40%;
+    margin: auto;
+}
