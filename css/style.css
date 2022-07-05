@@ -99,6 +99,9 @@ body{
     border: none;
     cursor: default;
 }
+.searchbar{
+    background-color: aliceblue;
+}
 ::placeholder{
     color: black;
     font-weight: bold;
