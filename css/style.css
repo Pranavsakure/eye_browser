@@ -21,7 +21,7 @@ body{
 }
 #navbar::before{
     content: "";
-    background-color: black;
+    background-color: rgb(75 42 75);
     position: absolute;
     z-index: -1;
     opacity: 0.7;
@@ -58,12 +58,12 @@ body{
     margin: auto;
     justify-content: center;
 }
-.container::before{
+body::before{
     content: "";
-    background:url(../img/bg.jpg);
+    background:url(../img/bg.jpg)center center/cover;
     position: absolute;
     width: 100%;
-    height: 110%;
+    height: 100%;
     z-index: -1;
     opacity: 0.6;
 }
@@ -99,9 +99,6 @@ body{
     border: none;
     cursor: default;
 }
-.searchbar{
-    background-color: aliceblue;
-}
 ::placeholder{
     color: black;
     font-weight: bold;
@@ -117,6 +114,9 @@ button{
     
 
 }
+/* .searchbar{
+    background-color: aliceblue;
+} */
 
 /* to remove the blue box */
 input:focus, textarea {
@@ -144,15 +144,20 @@ a{
 /* for footer */
 footer{
     background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    padding: 20px 10px;
+    padding-bottom: 10px;
     height: 20px;
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     #navbar ul{
         overflow: hidden;
     }
+   
+
    
 }
