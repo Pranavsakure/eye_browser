@@ -10,13 +10,14 @@
     
 }
 #navbar ul li a{
-    margin: 2px 22px;
+    margin: 2px 20px;
     
 }
 /* for container*/
 .container{
-    margin: 150px 0px;
+    margin: 190px 0px;
 }
+
 .container img{
        height: 60%;
        width: 80%;
@@ -37,6 +38,6 @@
 }
 /* for footer */
 footer{
-    width: 40%;
-    margin: auto;
+    width: 100%;
+
 }
